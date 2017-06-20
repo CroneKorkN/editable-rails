@@ -15,4 +15,5 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
   spec.files = Dir["{lib,vendor}/**/*"] + ["LICENSE", "README.md"]
+  spec.add_runtime_dependency 'jquery-rails', '> 0.0.0'
 end

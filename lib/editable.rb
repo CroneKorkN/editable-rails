@@ -1,3 +1,5 @@
+require "editable/version"
+
 module Editable
   module Rails
     class Engine < ::Rails::Engine
@@ -15,7 +17,7 @@ module Editable
         label:        :name
       )
 
-      value       = object.send(method)
+      value           = object.send(method)
       model           = object.class.model_name.singular
       id              = object.send object.class.primary_key
       url             = url_for(object)
